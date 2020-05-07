@@ -1,0 +1,113 @@
+/* NAVBAR */
+body .navbar {
+  position: relative;
+  z-index: 1;
+}
+
+/* UTILITY */
+.navbar-nav .tombol {
+  text-transform: uppercase;
+  border-radius: 30px;
+  margin-left: 20px;
+  background-color: #FEBE40;
+  color: #65342E;
+}
+
+.navbar-nav .tombol:hover {
+  background-color: #FEAA01;
+}
+
+/* JUMBOTRON */
+body .jumbotron {
+  background-image: url(bghydrant.png);
+  background-size: cover;
+  height: 420px;
+  position: relative;
+}
+
+body .jumbotron .container {
+  position: relative;
+  z-index: 1;
+}
+
+body .jumbotron::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+}
+
+body .jumbotron .display-4 {
+  color: white;
+  font-weight: 600;
+  text-shadow: 1px 1px 5px black;
+  margin-top: 60px;
+  margin-left: 50px;
+  font-size: 40px;
+}
+
+body .jumbotron .lead {
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  font-weight: 500;
+  margin-left: 50px;
+  font-size: 17px;
+}
+
+
+
+
+
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+  body .navbar .container .navbar-brand {
+    filter: drop-shadow(0 0 3px black);
+  }
+
+  body .navbar .navbar-nav .nav-link {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  body .navbar .navbar-nav .nav-link:hover {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+
+  .nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #C8DA52;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+
+  body .jumbotron {
+    height: 570px;
+    margin-top: -100px;
+  }
+
+  body .jumbotron .display-4 {
+    margin-top: 100px;
+    margin-left: 100px;
+    font-size: 62px;
+  }
+
+  body .jumbotron .lead {
+    font-weight: 300;
+    margin-left: 100px;
+    font-size: 20px;
+  }
+}
